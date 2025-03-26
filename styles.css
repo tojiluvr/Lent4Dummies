@@ -85,8 +85,8 @@ footer {
     margin: 10px auto; /* Centers the image */
     max-width: 100%; /* Ensures it doesn't overflow */
     height: auto;
-}
-    footer {
+    /* Footer Styles */
+footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -96,4 +96,27 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    .overview p {
+        font-size: 1em;
+    }
+    
+    .overview img {
+        display: block;
+        margin: 10px auto; /* Centers the image */
+        max-width: 100%; /* Ensures it doesn't overflow */
+        height: auto;
+    }
+}
+
 
