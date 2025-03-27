@@ -34,12 +34,12 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.5em;  /* Increased size but smaller than the title */
+    font-size: 1.5em; /* Increased size but smaller than the title */
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #f4f4f4;  /* Removes blue glow and underlines */
+    color: #f4f4f4;
     text-decoration: none;
 }
 
@@ -61,40 +61,14 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #4C3C4B;
-    color: white;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    nav ul {
-        text-align: center;
-    }
-
-    .overview p {
-        font-size: 1em;
-    }
-    .overview img {
-    display: block;
-    margin: 10px auto; /* Centers the image */
-    max-width: 100%; /* Ensures it doesn't overflow */
-    height: auto;
-    /* Footer Styles */
-footer {
+    background-color: purple; /* Adjust shade as needed */
+    height: 50px; /* Adjust thickness */
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
-    background-color: #3c2a4d; /* Adjust color if needed */
-    color: white;
     text-align: center;
-    padding: 10px 0;
+    color: white; /* Ensures readability */
+    line-height: 50px; /* Centers text vertically */
 }
 
 /* Responsive Design */
@@ -110,7 +84,7 @@ footer {
     .overview p {
         font-size: 1em;
     }
-    
+
     .overview img {
         display: block;
         margin: 10px auto; /* Centers the image */
@@ -118,5 +92,3 @@ footer {
         height: auto;
     }
 }
-
-
