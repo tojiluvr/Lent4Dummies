@@ -56,7 +56,7 @@ nav ul li a:hover {
 
 /* Content Container */
 .container {
-    padding-top: 120px; /* Prevents content from being hidden under the fixed header */
+    padding-top: 140px; /* Adjusted to give more space below the fixed header */
     padding-bottom: 80px; /* Ensures space before footer */
     flex: 1; /* Allow the container to grow and fill the remaining space */
 }
