@@ -6,6 +6,9 @@ body {
     background-color: #f0f0f5;
     color: #333;
     overflow-x: hidden;
+    min-height: 100vh; /* Ensure the body takes full height */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header Styles */
@@ -55,6 +58,7 @@ nav ul li a:hover {
 .container {
     padding-top: 120px; /* Prevents content from being hidden under the fixed header */
     padding-bottom: 80px; /* Ensures space before footer */
+    flex: 1; /* Allow the container to grow and fill the remaining space */
 }
 
 /* Overview Section */
@@ -91,6 +95,8 @@ footer {
     font-size: 1.2em;
     font-weight: bold;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: auto; /* Pushes footer to the bottom of the page */
 }
 
 /* Responsive Design */
@@ -119,64 +125,5 @@ footer {
         margin: 10px auto;
         max-width: 100%;
         height: auto;
-
-        /* General reset for padding/margin */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Center the content and give it some margin */
-.container {
-    width: 90%;
-    max-width: 1200px; /* Limit the width to 1200px on large screens */
-    margin: 0 auto;  /* Center it horizontally */
-}
-
-/* Add styles for the header */
-header {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Style for the main section */
-main {
-    padding: 20px;
-}
-
-/* Style for the overview section */
-.overview {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.overview img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
     }
 }
