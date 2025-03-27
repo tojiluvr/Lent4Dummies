@@ -51,12 +51,18 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+/* Content Container */
+.container {
+    padding-top: 120px; /* Prevents content from being hidden under the fixed header */
+    padding-bottom: 80px; /* Ensures space before footer */
+}
+
 /* Overview Section */
 .overview {
     text-align: center;
     padding: 50px;
     background-color: #fff;
-    margin: 120px auto 40px;
+    margin: 0 auto 40px;
     max-width: 900px;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -71,14 +77,13 @@ nav ul li a:hover {
     font-size: 1.2em;
     line-height: 1.8;
     color: #444;
+    padding-bottom: 20px;
 }
 
 /* Footer Styles */
 footer {
     background-color: #4C3C4B;
     height: 80px;
-    position: relative;
-    bottom: 0;
     width: 100%;
     text-align: center;
     color: white;
@@ -101,7 +106,7 @@ footer {
 
     .overview {
         padding: 30px;
-        margin: 100px auto 30px;
+        margin: 0 auto 30px;
         max-width: 90%;
     }
 
