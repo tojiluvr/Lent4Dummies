@@ -61,14 +61,16 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: purple; /* Adjust shade as needed */
-    height: 50px; /* Adjust thickness */
+    background-color: #4C3C4B; /* Adjust to the exact purple shade you want */
+    height: 80px; /* Increase thickness */
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
-    color: white; /* Ensures readability */
-    line-height: 50px; /* Centers text vertically */
+    color: white;
+    line-height: 80px; /* Centers text vertically */
+    font-size: 1.2em; /* Makes text easier to read */
+    font-weight: bold; /* Optional for better visibility */
 }
 
 /* Responsive Design */
