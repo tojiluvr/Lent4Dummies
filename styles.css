@@ -3,8 +3,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f5;
     color: #333;
+    overflow-x: hidden;
 }
 
 /* Header Styles */
@@ -13,11 +14,18 @@ header {
     color: white;
     text-align: center;
     padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     font-size: 2.5em;
     margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 nav ul {
@@ -34,43 +42,50 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.5em; /* Increased size but smaller than the title */
-    transition: color 0.3s ease;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.2s;
 }
 
 nav ul li a:hover {
-    color: #f4f4f4;
-    text-decoration: none;
+    color: #ffccff;
+    transform: scale(1.1);
 }
 
 /* Overview Section */
 .overview {
     text-align: center;
-    padding: 40px;
+    padding: 50px;
     background-color: #fff;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 120px auto 40px;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.overview:hover {
+    transform: translateY(-5px);
 }
 
 .overview p {
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.8;
+    color: #444;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #4C3C4B; /* Adjust to the exact purple shade you want */
-    height: 80px; /* Increase thickness */
+    background-color: #4C3C4B;
+    height: 80px;
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
     color: white;
-    line-height: 80px; /* Centers text vertically */
-    font-size: 1.2em; /* Makes text easier to read */
-    font-weight: bold; /* Optional for better visibility */
+    line-height: 80px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
@@ -81,6 +96,13 @@ footer {
 
     nav ul {
         text-align: center;
+        padding: 10px;
+    }
+
+    .overview {
+        padding: 30px;
+        margin: 100px auto 30px;
+        max-width: 90%;
     }
 
     .overview p {
@@ -89,14 +111,17 @@ footer {
 
     .overview img {
         display: block;
-        margin: 10px auto; /* Centers the image */
-        max-width: 100%; /* Ensures it doesn't overflow */
+        margin: 10px auto;
+        max-width: 100%;
         height: auto;
+    }
+}
 
-        html, body {
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-    overflow-y: auto; /* Allows vertical scrolling but limits it */
-    height: 100vh; /* Ensures full height without extra space */
+/* Prevent scrolling too far up */
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
 }
 
 body {
@@ -107,15 +132,11 @@ body {
 
 main {
     flex: 1;
-    overflow-y: auto; /* Allows scrolling inside the main content */
+    overflow-y: auto;
 }
 
-/* Prevent scrolling too far up */
 body::before {
     content: "";
     display: block;
-    height: 1px; /* Acts as a top boundary */
+    height: 1px;
 }
-
-
-
