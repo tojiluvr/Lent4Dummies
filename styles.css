@@ -1,3 +1,12 @@
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+body {
+    padding-top: 80px; /* Adjust to match the height of the top border */
+}
+
 /* Global Styles */
 body {
     font-family: 'Open Sans', sans-serif;
