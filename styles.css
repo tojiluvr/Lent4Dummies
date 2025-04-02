@@ -1,11 +1,23 @@
+/* CSS Variables (for easy customization) */
+:root {
+    --primary-color: #4C3C4B;
+    --secondary-color: #ffccff;
+    --background-color: #f0f0f5;
+    --text-color: #333;
+    --light-text-color: #fff;
+    --card-background: #fff;
+    --border-radius: 12px;
+    --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    --hover-scale: 1.05; /* Scale for hover effects */
+}
 
 /* Global Styles */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding-top: 120px; /* Added to prevent content being hidden behind header */
-    background-color: #f0f0f5;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
     overflow-x: hidden;
     min-height: 100vh; /* Ensure the body takes full height */
     display: flex;
@@ -14,8 +26,8 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #4C3C4B;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
     text-align: center;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -40,19 +52,19 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 15px; /* Reduced margin for tighter spacing */
 }
 
 nav ul li a {
-    color: white;
+    color: var(--light-text-color);
     text-decoration: none;
     font-size: 1.2em;
-    transition: color 0.3s ease, transform 0.2s;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 nav ul li a:hover {
-    color: #ffccff;
-    transform: scale(1.1);
+    color: var(--secondary-color);
+    transform: scale(var(--hover-scale));
 }
 
 /* Content Container */
@@ -65,11 +77,11 @@ nav ul li a:hover {
 .overview {
     text-align: center;
     padding: 50px;
-    background-color: #fff;
+    background-color: var(--card-background);
     margin: 0 auto 40px;
     max-width: 900px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     transition: transform 0.3s ease;
 }
 
@@ -86,11 +98,11 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #4C3C4B;
+    background-color: var(--primary-color);
     height: 80px;
     width: 100%;
     text-align: center;
-    color: white;
+    color: var(--light-text-color);
     line-height: 80px;
     font-size: 1.2em;
     font-weight: bold;
